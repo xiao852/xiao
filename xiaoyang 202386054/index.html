@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>篮球赛事中心</title>
+
+<style>
+
+/* 🏀 篮球风格配色 */
+body{
+    margin:0;
+    font-family:Arial;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color:white;
+}
+
+/* 导航栏 */
+nav{
+    background:#000;
+    padding:15px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{
+    color:#ff6a00; /* 篮球橙 */
+}
+
+/* 内容 */
+.container{
+    padding:20px;
+}
+
+/* 大图 */
+.hero{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* 比赛卡片 */
+.card{
+    background:#1c1c1c;
+    padding:15px;
+    border-radius:10px;
+    margin-top:15px;
+    border-left:5px solid #ff6a00;
+}
+
+/* 图片墙 */
+.grid{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+.grid img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* 比分板 */
+.score{
+    display:flex;
+    justify-content:space-between;
+    background:#000;
+    padding:10px;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+/* footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+    margin-top:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">首页</a>
+<a href="about.html">赛事介绍</a>
+<a href="schedule.html">赛程</a>
+<a href="teams.html">球队</a>
+<a href="contact.html">场馆</a>
+</nav>
+
+<div class="container">
+
+<!-- 🏀 主视觉（图片1） -->
+<img class="hero" src="https://images.unsplash.com/photo-1546519638-68e109498ffc">
+
+<h2>🔥 今日焦点比赛</h2>
+
+<!-- 比分（更像真实网站） -->
+<div class="score">
+<span>🏀 快船</span>
+<span>102 : 98</span>
+<span>火箭</span>
+</div>
+
+<div class="card">📅 时间：2026-06-25 19:00</div>
+<div class="card">📍 场馆：Busan Arena</div>
+
+<h2>📸 比赛精彩瞬间</h2>
+
+<div class="grid">
+
+<!-- 图片2 -->
+<img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a">
+
+<!-- 图片3 -->
+<img src="https://images.unsplash.com/photo-1519861531473-9200262188bf">
+
+<!-- 图片4 -->
+<img src="https://images.unsplash.com/photo-1517649763962-0c623066013b">
+
+<!-- 图片5 -->
+<img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d">
+
+<!-- 图片6 -->
+<img src="https://images.unsplash.com/photo-1505842465776-3d90f6163106">
+
+</div>
+
+<h2>🏆 热门球队</h2>
+
+<div class="card">🏀 快船 - 进攻强队</div>
+<div class="card">🏀 勇士 - 三分王者</div>
+<div class="card">🏀 湖人 - 经典豪门</div>
+
+</div>
+
+<footer>
+<p>© 2026 Basketball Event</p>
+</footer>
+
+</body>
+</html>
